@@ -1,7 +1,7 @@
+require('dotenv').config()
 const express=require("express")
 const taskRouter=require('./taskRoute')
 const userRoute=require('./userRoute')
-const bcrypt=require('bcrypt')
 
 require('./DB')
 

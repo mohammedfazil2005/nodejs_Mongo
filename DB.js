@@ -1,6 +1,6 @@
 const mongoose=require("mongoose")
 
-mongoose.connect('mongodb://127.0.0.1:27017/crudDB').then((res)=>{
+mongoose.connect(process.env.MONGODBSTRING).then((res)=>{
     console.log("Database connected")
 }).catch((err)=>{
     console.log(err)
